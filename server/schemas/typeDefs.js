@@ -24,7 +24,7 @@ const typeDefs = gql`
         password: String
         _id: ID
         bookCount: Int
-        userBooks: [Book]
+        savedBooks: [Book]
     }
 
     type Query {
