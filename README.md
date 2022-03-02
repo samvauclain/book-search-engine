@@ -1,5 +1,3 @@
-# Book Search Engine Starter Code
-
 # Book Search Engine
 
 AS AN avid reader
