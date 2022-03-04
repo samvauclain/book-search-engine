@@ -10,8 +10,8 @@ import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap
 const SavedBooks = () => {
 
   const userData = data?.me || {};
-  const {loading, data} = useQuery(QUERY_ME)
-  const [removeBook, {err}] = useMutation(REMOVE_BOOK)
+  const {loading, data} = useQuery(QUERY_ME);
+  const [removeBook, {err}] = useMutation(REMOVE_BOOK);
 
   console.log(userData);
 
@@ -24,12 +24,12 @@ const SavedBooks = () => {
 
     try {
       const {data} = await removeBook({
-        variables: {bookId}
+        variables: { bookId }
       });
-      removeBookId(bookId);
+        removeBookId(bookId);
     } catch (err) {
-      console.error(err);
-    }
+        console.error(err);
+      }
   };
 
   // if data isn't here yet, say so
