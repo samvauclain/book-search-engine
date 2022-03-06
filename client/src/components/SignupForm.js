@@ -18,7 +18,7 @@ const SignupForm = () => {
   };
 
   const [addUser,{error, data}] = useMutation(ADD_USER);
-  const [showAlert, setShowAlert] = useState(false);
+ 
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
