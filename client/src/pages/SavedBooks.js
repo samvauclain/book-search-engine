@@ -9,9 +9,9 @@ import React from 'react';
 
 const SavedBooks = () => {
 
-  const userData = data?.me || {};
   const {loading, data} = useQuery(QUERY_ME);
-  const [removeBook, {err}] = useMutation(REMOVE_BOOK);
+  const [removeBook] = useMutation(REMOVE_BOOK);
+  const userData = data?.me || {};
 
   console.log(userData);
 
@@ -32,8 +32,7 @@ const SavedBooks = () => {
       }
   };
 
-  // if data isn't here yet, say so
-  if (!userData.length) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
