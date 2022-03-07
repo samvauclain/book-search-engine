@@ -1,6 +1,9 @@
 {
   "name": "book-search-engine",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.4.0"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/react": "^12.1.3",
